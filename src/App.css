@@ -1,0 +1,7 @@
+#root {
+  @apply min-w-[350px] max-w-[1280px] my-0 mx-auto px-4;
+}
+
+tr {
+  @apply border-b border-gray-400;
+}
