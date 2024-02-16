@@ -56,7 +56,10 @@ function Main() {
         }
         setInventoryArr(inventoryArr.push(detailsRowObj));
         setLsInventory(inventoryArr);
-      } else setLsInventory([detailsRowObj]);
+      } else {
+        setLsInventory([detailsRowObj]);
+        location.reload();
+      }
     } else {
       const toUpdate = inventoryArr[index];
       toUpdate.storage = storageRef.current.value;
